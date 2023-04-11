@@ -402,7 +402,7 @@ export default function Map() {
                     if(!panel.isDeleted){
                         let area = panel.area;
                         return (
-                            <div className="roof_panel_info_box">
+                            <div className="roof_panel_info_box" key={panel.id}>
                                 <h1>Panel {index+1}</h1>
                                 <p>Area: <span className="bold">{area.toFixed(2)} ft²</span></p>
                                 {panel.points.length === 3 && <p>Panels: <span className="bold">{panel.solarPanels.length} solar panels</span></p>}
